@@ -1,0 +1,528 @@
+body {
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #9ceee3;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(19, 1, 1);
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #49ace6;
+  color: rgb(231, 233, 240);
+}
+
+/* Column container */
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+h2 {
+  color: blue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 15px;
+  display: block;
+}
+
+ol {
+  display: block;
+}
+ol li {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  text-align: left;
+}
+ul {
+  text-align: left;
+}
+
+#img1 {
+  width: 55%;
+  height: 300px;
+  border: 5px solid rgb(236, 38, 12);
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+/*------section personalizado para moviles------*/
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white;
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+  .header h1 {
+    width: 100%;
+    padding: auto 5px;
+    font-size: 1.5rem;
+  }
+  .header p {
+    width: 100%;
+    padding: auto 5px;
+  }
+  h2 {
+    width: 80%;
+    color: blue;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #img1 {
+    width: 85%;
+    height: auto;
+    border: 10px solid black;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 15px;
+  }
+}
+
+#intro {
+  width: 80%;
+  text-align: center;
+  text-align: justify;
+  padding: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-indent: 40px;
+  margin: auto;
+}
+
+#intro1 {
+  width: 65%;
+  text-align: justify; /* Cambié a justify solo; elimina center si quieres centrado */
+  margin: auto;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-indent: 40px;
+  /* Removemos border para usar background simulado */
+  /* border: 5px dashed red; */
+  background:
+    linear-gradient(90deg, transparent 50%, red 50%),
+    linear-gradient(90deg, transparent 50%, red 50%),
+    linear-gradient(0deg, transparent 50%, red 50%),
+    linear-gradient(0deg, transparent 50%, red 50%);
+  background-size:
+    10px 5px,
+    10px 5px,
+    5px 10px,
+    5px 10px; /* Ajustado al grosor de 5px */
+  background-position:
+    0 0,
+    0 100%,
+    0 0,
+    100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  animation: dasher 1s linear infinite;
+}
+
+@keyframes dasher {
+  0% {
+    background-position:
+      0 0,
+      0 100%,
+      0 0,
+      100% 0;
+  }
+  100% {
+    background-position:
+      10px 0,
+      10px 100%,
+      0 10px,
+      100% 10px;
+  } /* Desplaza los guiones */
+}
+
+p span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: blue;
+  text-decoration: none;
+}
+.row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row p {
+  font-size: 1.2rem;
+}
+.row1 {
+  background-color: rgb(216, 213, 231);
+  width: 90%;
+  display: flex;
+  text-align: center;
+  /*margin: 0 3%;*/
+  margin: auto;
+}
+
+.main1 {
+  width: 90%;
+  display: block;
+  text-align: center;
+}
+.main2 {
+  width: 90%;
+  display: block;
+  text-align: center;
+}
+.main3 {
+width: 90%;
+text-align: left;
+padding: auto;
+display: block;
+}
+
+.info_adicional {
+  width: 60%;
+  background-color: #aaa;
+  border: red 2px solid;
+  border-radius: 15px;
+  text-align: center;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin: auto;
+  padding: auto;
+  display: block;
+}
+.info_adicional p {
+  font-size: 1.2rem;
+  margin: 5px  20px;
+  padding: auto;
+}
+.intro3 {
+  font-size: 1.2rem;
+  text-indent: 50px;
+  margin: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    margin: auto;
+  }
+
+  .row1 {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    margin: auto;
+  }
+  .main3 {
+width: 90%;
+display: block;
+text-align: left;
+padding: 10px;
+
+}
+
+  #intro {
+    width: 90%;
+    text-align: left;
+    text-align: justify;
+    padding-top: 15px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-indent: 30px;
+  }
+  #intro1 {
+    width: 90%;
+    text-align: left;
+    text-align: justify;
+    /*padding-top: 15px;*/
+    margin: 15px auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    text-indent: 30px;
+  }
+  h2 {
+    width: 90%;
+  }
+  span a {
+    text-align: center;
+  }
+  li {
+    width: 100%;
+    text-align: left;
+  }
+  ol li {
+    margin-bottom: auto;
+    font-size: 1rem;
+  }
+  ul {
+    text-align: left;
+  }
+  h3 {
+    margin-bottom: 0px;
+  }
+  .gallery-item p {
+    margin-top: 0;
+    text-align: justify;
+  }
+  .gallery-item a {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .info_adicional {
+  width: 90%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: auto;
+  display: block;
+}
+.info_adicional p {
+  font-size: 1.2rem;
+  margin: 5px  5px;
+  padding: auto;
+}
+.info_adicional .intro3 {
+  font-size: 1rem;
+  text-indent: 10px;
+}
+}
+
+/* nuevo */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 30%;
+  text-align: center;
+  display: block;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Intro container for flex layout */
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Contact Form Styles */
+.contact_info {
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px 80px;
+  background-color: #e5e4e8;
+  border-radius: 8px rgb(99, 98, 98);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact_info h2 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 20px;
+}
+.contact_info p {
+  width: 100%;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  padding-left: 5%;
+}
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #090909;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: rgb(7, 7, 7);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #16a085;
+}
+
+/* responsive Formulario de contacto */
+@media (max-width: 480px) {
+  .contact_info {
+  width: 100%;
+  padding:  10px 20px;
+  background-color: #e5e4e8;
+  border-radius: 8px rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+  h2 {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+}
+
+/* Desktop mode adjustments for better adaptation with Google ads */
+@media (min-width: 768px) {
+  img {
+    max-width: 90%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  .gallery img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+/* Clock Styles */
+.fecha-hora-widget {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  font-weight: 200;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 150px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fecha {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+.hora {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*------section clock personalizado para moviles------*/
+@media screen and (max-width: 480px) {
+  .fecha-hora-widget {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  .fecha {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  .hora {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+}
